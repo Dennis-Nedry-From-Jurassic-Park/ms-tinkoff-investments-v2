@@ -1,0 +1,706 @@
+{
+    "instruments": [
+        {
+            "figi": "BBG0013J7V24",
+            "ticker": "AMDRUB_TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 10000,
+            "currency": "rub",
+            "shortEnabledFlag": false,
+            "name": "Армянский драм",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "amd",
+                "units": 100,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "amd",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 2500000
+            },
+            "apiTradeAvailableFlag": false,
+            "uid": "86d28f8d-379d-422f-b01d-c32ee0b97501",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG0013HQ524",
+            "ticker": "JPYRUB_TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 100000,
+            "currency": "rub",
+            "klong": {
+                "units": 2,
+                "nano": 0
+            },
+            "kshort": {
+                "units": 2,
+                "nano": 0
+            },
+            "dlong": {
+                "units": 1,
+                "nano": 0
+            },
+            "dshort": {
+                "units": 1,
+                "nano": 0
+            },
+            "dlongMin": {
+                "units": 1,
+                "nano": 0
+            },
+            "dshortMin": {
+                "units": 1,
+                "nano": 0
+            },
+            "shortEnabledFlag": false,
+            "name": "Иена",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "jpy",
+                "units": 100,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": false,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "jpy",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 100000
+            },
+            "apiTradeAvailableFlag": true,
+            "uid": "163ce2bf-37a1-42e0-b613-0e50a15f8933",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG0013HG026",
+            "ticker": "KZTRUB_TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 10000,
+            "currency": "rub",
+            "shortEnabledFlag": false,
+            "name": "Тенге",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "kzt",
+                "units": 100,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "kzt",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 2500000
+            },
+            "apiTradeAvailableFlag": true,
+            "uid": "c7c26356-7352-4c37-8316-b1d93b18e16e",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG00D87WQY7",
+            "ticker": "BYNRUB_TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 1000,
+            "currency": "rub",
+            "shortEnabledFlag": false,
+            "name": "Белорусский рубль",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "byn",
+                "units": 1,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "byn",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 2500000
+            },
+            "apiTradeAvailableFlag": true,
+            "uid": "ed136b6b-5629-41fd-8bcf-5c2d9e448760",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG0013HJJ31",
+            "ticker": "EUR_RUB__TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 1000,
+            "currency": "rub",
+            "klong": {
+                "units": 2,
+                "nano": 0
+            },
+            "kshort": {
+                "units": 2,
+                "nano": 0
+            },
+            "dlong": {
+                "units": 0,
+                "nano": 990000000
+            },
+            "dshort": {
+                "units": 1,
+                "nano": 102500000
+            },
+            "dlongMin": {
+                "units": 0,
+                "nano": 900000000
+            },
+            "dshortMin": {
+                "units": 0,
+                "nano": 450000000
+            },
+            "shortEnabledFlag": false,
+            "name": "Евро",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "eur",
+                "units": 1,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "eur",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 2500000
+            },
+            "apiTradeAvailableFlag": true,
+            "uid": "b1c06e5e-f5d4-4ff5-8cb3-dcacccd933da",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG0013HQ5F0",
+            "ticker": "GBPRUB_TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 1000,
+            "currency": "rub",
+            "klong": {
+                "units": 2,
+                "nano": 0
+            },
+            "kshort": {
+                "units": 2,
+                "nano": 0
+            },
+            "dlong": {
+                "units": 1,
+                "nano": 0
+            },
+            "dshort": {
+                "units": 1,
+                "nano": 0
+            },
+            "dlongMin": {
+                "units": 1,
+                "nano": 0
+            },
+            "dshortMin": {
+                "units": 1,
+                "nano": 0
+            },
+            "shortEnabledFlag": false,
+            "name": "Фунт стерлингов",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "gbp",
+                "units": 1,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "gbp",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 2500000
+            },
+            "apiTradeAvailableFlag": true,
+            "uid": "dfcccc14-b90d-476f-82e3-ce55c8093afc",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG0013HSW87",
+            "ticker": "HKDRUB_TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 1000,
+            "currency": "rub",
+            "klong": {
+                "units": 2,
+                "nano": 0
+            },
+            "kshort": {
+                "units": 2,
+                "nano": 0
+            },
+            "dlong": {
+                "units": 0,
+                "nano": 990000000
+            },
+            "dshort": {
+                "units": 1,
+                "nano": 102500000
+            },
+            "dlongMin": {
+                "units": 0,
+                "nano": 900000000
+            },
+            "dshortMin": {
+                "units": 0,
+                "nano": 450000000
+            },
+            "shortEnabledFlag": false,
+            "name": "Гонконгский доллар",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "hkd",
+                "units": 1,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "hkd",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 100000
+            },
+            "apiTradeAvailableFlag": true,
+            "uid": "c1bcc46b-32c1-47dc-93b4-1db269c103a4",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG0013HQ5K4",
+            "ticker": "CHFRUB_TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 1000,
+            "currency": "rub",
+            "klong": {
+                "units": 2,
+                "nano": 0
+            },
+            "kshort": {
+                "units": 2,
+                "nano": 0
+            },
+            "dlong": {
+                "units": 1,
+                "nano": 0
+            },
+            "dshort": {
+                "units": 1,
+                "nano": 0
+            },
+            "dlongMin": {
+                "units": 1,
+                "nano": 0
+            },
+            "dshortMin": {
+                "units": 1,
+                "nano": 0
+            },
+            "shortEnabledFlag": false,
+            "name": "Швейцарский франк",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "chf",
+                "units": 1,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 4,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "chf",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 2500000
+            },
+            "apiTradeAvailableFlag": true,
+            "uid": "b8ef7e05-97ef-4b78-aac3-cd16ee320168",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG000VJ5YR4",
+            "ticker": "GLDRUB_TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 1,
+            "currency": "rub",
+            "shortEnabledFlag": false,
+            "name": "Золото",
+            "exchange": "FX_MTL",
+            "nominal": {
+                "currency": "xau",
+                "units": 1,
+                "nano": 0
+            },
+            "countryOfRisk": "RU",
+            "countryOfRiskName": "Российская Федерация",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "xau",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 10000000
+            },
+            "apiTradeAvailableFlag": false,
+            "uid": "258e2b93-54e8-4f2d-ba3d-a507c47e3ae2",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG0013J12N1",
+            "ticker": "TRYRUB_TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 1000,
+            "currency": "rub",
+            "klong": {
+                "units": 2,
+                "nano": 0
+            },
+            "kshort": {
+                "units": 2,
+                "nano": 0
+            },
+            "dlong": {
+                "units": 1,
+                "nano": 0
+            },
+            "dshort": {
+                "units": 1,
+                "nano": 0
+            },
+            "dlongMin": {
+                "units": 1,
+                "nano": 0
+            },
+            "dshortMin": {
+                "units": 1,
+                "nano": 0
+            },
+            "shortEnabledFlag": false,
+            "name": "Турецкая лира",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "try",
+                "units": 1,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "try",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 100000
+            },
+            "apiTradeAvailableFlag": true,
+            "uid": "8cf87094-7c0f-465e-87b6-52e742a32045",
+            "realExchange": 1
+        },
+        {
+            "figi": "RUB000UTSTOM",
+            "ticker": "RUB000UTSTOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 1,
+            "currency": "rub",
+            "shortEnabledFlag": false,
+            "name": "Российский рубль",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "rub",
+                "units": 1,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "rub",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 2500000
+            },
+            "apiTradeAvailableFlag": false,
+            "uid": "a92e2e25-a698-45cc-a781-167cf465257c",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG0013HQ310",
+            "ticker": "UZSRUB_TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 1000000,
+            "currency": "rub",
+            "shortEnabledFlag": false,
+            "name": "Узбекский сум",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "uzs",
+                "units": 10000,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "uzs",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 2500000
+            },
+            "apiTradeAvailableFlag": false,
+            "uid": "606864c7-845d-4783-b1e1-06f354318948",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG0013HLF18",
+            "ticker": "ZARRUB_TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 10000,
+            "currency": "rub",
+            "shortEnabledFlag": false,
+            "name": "Южноафриканский рэнд",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "zar",
+                "units": 10,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "zar",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 2500000
+            },
+            "apiTradeAvailableFlag": false,
+            "uid": "f4683f46-ec40-45af-993b-fe9184ab18c8",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG000VHQTD1",
+            "ticker": "SLVRUB_TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 100,
+            "currency": "rub",
+            "shortEnabledFlag": false,
+            "name": "Серебро",
+            "exchange": "FX_MTL",
+            "nominal": {
+                "currency": "xag",
+                "units": 1,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "xag",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 10000000
+            },
+            "apiTradeAvailableFlag": false,
+            "uid": "d6240afe-4e9c-49b6-8835-629f431c8506",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG0013HJ924",
+            "ticker": "AEDRUB_TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 1000,
+            "currency": "rub",
+            "shortEnabledFlag": false,
+            "name": "Дирхам ОАЭ",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "aed",
+                "units": 1,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "aed",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 2500000
+            },
+            "apiTradeAvailableFlag": false,
+            "uid": "97a51505-1472-4ab6-af43-c7edfcba3a55",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG0013HGFT4",
+            "ticker": "USD000UTSTOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 1000,
+            "currency": "rub",
+            "klong": {
+                "units": 2,
+                "nano": 0
+            },
+            "kshort": {
+                "units": 2,
+                "nano": 0
+            },
+            "dlong": {
+                "units": 0,
+                "nano": 499000000
+            },
+            "dshort": {
+                "units": 0,
+                "nano": 499000000
+            },
+            "dlongMin": {
+                "units": 0,
+                "nano": 292200000
+            },
+            "dshortMin": {
+                "units": 0,
+                "nano": 224300000
+            },
+            "shortEnabledFlag": true,
+            "name": "Доллар США",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "usd",
+                "units": 1,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "usd",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 2500000
+            },
+            "apiTradeAvailableFlag": true,
+            "uid": "a22a1263-8e1b-4546-a1aa-416463f104d3",
+            "realExchange": 1
+        },
+        {
+            "figi": "BBG0013HRTL0",
+            "ticker": "CNYRUB_TOM",
+            "classCode": "CETS",
+            "isin": "",
+            "lot": 1000,
+            "currency": "rub",
+            "klong": {
+                "units": 2,
+                "nano": 0
+            },
+            "kshort": {
+                "units": 2,
+                "nano": 0
+            },
+            "dlong": {
+                "units": 1,
+                "nano": 0
+            },
+            "dshort": {
+                "units": 1,
+                "nano": 0
+            },
+            "dlongMin": {
+                "units": 1,
+                "nano": 0
+            },
+            "dshortMin": {
+                "units": 1,
+                "nano": 0
+            },
+            "shortEnabledFlag": false,
+            "name": "Юань",
+            "exchange": "FX",
+            "nominal": {
+                "currency": "cny",
+                "units": 1,
+                "nano": 0
+            },
+            "countryOfRisk": "",
+            "countryOfRiskName": "",
+            "tradingStatus": 1,
+            "otcFlag": false,
+            "buyAvailableFlag": true,
+            "sellAvailableFlag": true,
+            "isoCurrencyName": "cny",
+            "minPriceIncrement": {
+                "units": 0,
+                "nano": 1000000
+            },
+            "apiTradeAvailableFlag": true,
+            "uid": "4587ab1d-a9c9-4910-a0d6-86c7b9c42510",
+            "realExchange": 1
+        }
+    ]
+}
