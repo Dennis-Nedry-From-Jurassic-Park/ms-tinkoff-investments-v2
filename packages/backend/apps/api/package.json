@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+  },
+  "dependencies": {
+    "@yarnpkg/pnpify": "^4.0.0-rc.38",
+    "bignumber.js": "^9.1.1",
+    "bybit-api": "^3.3.10",
+    "date-fns": "^2.29.3",
+    "ms-auth": "0.0.1",
+    "ms-base": "workspace:^",
+    "tinkoff-invest-api": "^5.0.0",
+    "tslib": "^2.5.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@jest/types": "^29.3.1",
+    "@types/node": "^18.11.18"
+  }
+}

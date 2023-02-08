@@ -1,0 +1,16 @@
+{
+  "extends": "../../../../tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "dist/apps/api"
+  },
+  "lib": [
+    "es2016",
+    "dom"
+  ],
+  "include": ["src"],
+  "paths": {
+    "*": [ "../../../node_modules/*"]
+  },
+  "exclude": ["node_modules", "dist", "test", "logs", "**/*spec.ts"]
+}
