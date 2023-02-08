@@ -5,8 +5,8 @@
   "license": "Apache-2.0",
   "author": "Dennis-Nedry-From-Jurassic-Park",
   "workspaces": [
-    "packages/backend/**",
-    "shared/*"
+    "packages/**",
+    "shared/**"
   ],
   "scripts": {
     "------------ pnpm ------------": "",
@@ -19,8 +19,6 @@
     "git submodule update": "git submodule update --init --recursive && git submodule foreach --recursive git pull origin main",
 
     "yarn:prebuild": "yarn workspaces foreach --topological-dev run prebuild",
-    "yarn:add:package": "yarn workspace backend add tinkoff-invest-api",
-
 
     "turbo:global": "yarn add turbo",
     "turbo:build": "npx turbo build",
@@ -32,6 +30,7 @@
     "lint-q": "eslint --color --fix --quiet --ext .ts,.js,.jsx packages/backend/apps/ms-cron/src",
     "test": "jest",
     "build:all": "yarn workspaces foreach run build",
+    "test.ts": "ts-node -r tsconfig-paths/register packages/backend/apps/test.ts",
     "main.ts": "ts-node -r tsconfig-paths/register packages/backend/apps/api/src/main.ts",
     "doppler-main.ts": "doppler secrets download --no-file --format env > .env && doppler run -- ts-node -r tsconfig-paths/register packages/backend/apps/api/src/main.ts",
     "doppler-main2.ts": "doppler run -- ts-node -r tsconfig-paths/register packages/backend/apps/api/src/main.ts",
@@ -46,12 +45,12 @@
     "path": "^0.12.7",
     "telegraf": "^4.11.2",
     "ts-node": "^10.9.1",
+    "@types/node": "^18.11.18",
     "tslib": "^2.4.1",
     "turbo": "^1.7.0"
   },
   "devDependencies": {
     "@jest/types": "^29.3.1",
-    "@types/node": "^18.11.18",
     "jest": "^29.3.1",
     "jest-ts-auto-mock": "^2.1.0",
     "lage": "1.9.6",
