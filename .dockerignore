@@ -1,0 +1,21 @@
+# Ignore everything
+*
+# Allow files and directories
+!/package.json
+# Allow pnpm
+!/pnpm-lock.yaml
+!/pnpm-workspace.yaml
+# Allow shared
+!/shared
+!/packages/backend/migrations
+!/packages/backend/.eslintrc.json
+!/packages/backend/.eslintrc.yml
+!/packages/backend/config.ts
+!/packages/backend/jest.config.ts
+!/packages/backend/nest-cli.json
+!/packages/backend/package.json
+!/packages/backend/package-lock.json
+!/packages/backend/tsconfig.build.json
+!/packages/backend/tsconfig.json
+!/packages/backend/webpack.config.js
+!/packages/backend/yarn.lock
