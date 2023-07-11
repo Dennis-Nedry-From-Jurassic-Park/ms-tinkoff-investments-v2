@@ -1,0 +1,100 @@
+{
+    ts: "2018-09-14T23:59:59.999Z",
+    ticker: "POLY",
+    req: {
+           figi: 'BBG004PYF2N3',
+           quantity: 1,
+           price: { units: 468, nano: 0 },
+           direction: 1,
+           orderType: 1,
+           orderId: '316be556-46bd-4ab0-83c6-e6efbe425acd'
+         },
+    postOrder:   {
+                   orderId: '34464332843',
+                   executionReportStatus: 4,
+                   lotsRequested: 1,
+                   lotsExecuted: 0,
+                   initialOrderPrice: { currency: 'rub', units: 468, nano: 0 },
+                   executedOrderPrice: { currency: 'rub', units: 0, nano: 0 },
+                   totalOrderAmount: { currency: 'rub', units: 0, nano: 0 },
+                   initialCommission: { currency: 'rub', units: 1, nano: 410000000 },
+                   executedCommission: { currency: 'rub', units: 0, nano: 0 },
+                   aciValue: { currency: 'gbp', units: 0, nano: 0 },
+                   figi: 'BBG004PYF2N3',
+                   direction: 1,
+                   initialSecurityPrice: { currency: 'rub', units: 468, nano: 0 },
+                   orderType: 1,
+                   message: '',
+                   initialOrderPricePt: undefined
+                 },
+     resp: [
+             {
+               orderId: '34464332843',
+               executionReportStatus: 4,
+               lotsRequested: 1,
+               lotsExecuted: 0,
+               initialOrderPrice: { currency: 'rub', units: 468, nano: 0 },
+               executedOrderPrice: { currency: 'rub', units: 0, nano: 0 },
+               totalOrderAmount: { currency: 'rub', units: 468, nano: 0 },
+               averagePositionPrice: { currency: 'rub', units: 0, nano: 0 },
+               initialCommission: { currency: 'rub', units: 1, nano: 410000000 },
+               executedCommission: { currency: 'rub', units: 0, nano: 0 },
+               figi: 'BBG004PYF2N3',
+               direction: 1,
+               initialSecurityPrice: { currency: 'rub', units: 468, nano: 0 },
+               stages: [],
+               serviceCommission: { currency: 'rub', units: 0, nano: 0 },
+               currency: 'rub',
+               orderType: 1,
+               orderDate: 2023-02-06T10:56:33.901Z
+             }
+           ]
+}
+
+
+
+
+
+
+
+
+Process finished with exit code 0
+
+
+
+
+C:\Yarn\bin\yarn.cmd run doppler-main2.ts
+yarn run v1.22.19
+$ doppler run -- ts-node -r tsconfig-paths/register packages/backend/apps/api/src/main.ts
+[
+  {
+    figi: 'BBG000R607Y3',
+    price: { units: 9316, nano: 0 },
+    time: 2023-02-07T07:25:01.310Z
+  },
+  {
+    figi: 'BBG00QPYJ5H0',
+    price: { units: 2783, nano: 0 },
+    time: 2023-02-07T07:25:00.518Z
+  },
+  {
+    figi: 'BBG004730RP0',
+    price: { units: 159, nano: 910000000 },
+    time: 2023-02-07T07:25:00.778Z
+  },
+  {
+    figi: 'BBG00475KKY8',
+    price: { units: 1091, nano: 0 },
+    time: 2023-02-07T07:25:01.365Z
+  },
+  {
+    figi: 'BBG004PYF2N3',
+    price: { units: 515, nano: 600000000 },
+    time: 2023-02-07T07:24:55.603Z
+  }
+]
+Done in 7.32s.
+
+Process finished with exit code 0
+
+

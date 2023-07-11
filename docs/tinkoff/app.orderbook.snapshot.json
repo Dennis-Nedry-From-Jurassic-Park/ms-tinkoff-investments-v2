@@ -1,0 +1,1571 @@
+{
+  "figi": "BBG004PYF2N3",
+  "depth": 50,
+  "isConsistent": true,
+  "bids": [
+    {
+      "price": {
+        "units": 559,
+        "nano": 300000000
+      },
+      "quantity": 30
+    },
+    {
+      "price": {
+        "units": 559,
+        "nano": 200000000
+      },
+      "quantity": 323
+    },
+    {
+      "price": {
+        "units": 559,
+        "nano": 100000000
+      },
+      "quantity": 378
+    },
+    {
+      "price": {
+        "units": 559,
+        "nano": 0
+      },
+      "quantity": 914
+    },
+    {
+      "price": {
+        "units": 558,
+        "nano": 900000000
+      },
+      "quantity": 135
+    },
+    {
+      "price": {
+        "units": 558,
+        "nano": 800000000
+      },
+      "quantity": 2937
+    },
+    {
+      "price": {
+        "units": 558,
+        "nano": 700000000
+      },
+      "quantity": 2653
+    },
+    {
+      "price": {
+        "
+        units
+        ":558,"
+        nano
+        ":600000000},"
+        quantity
+        ":55},{"
+        price
+        ":{"
+        units
+        ":558,"
+        nano
+        ":500000000},"
+        quantity
+        ":450},{"
+        price
+        ":{"
+        units
+        ":558,"
+        nano
+        ":400000000},"
+        quantity
+        ":370},{"
+        price
+        ":{"
+        units
+        ":558,"
+        nano
+        ":300000000},"
+        quantity
+        ":4086},{"
+        price
+        ":{"
+        units
+        ":558,"
+        nano
+        ":200000000},"
+        quantity
+        ":1935},{"
+        price
+        ":{"
+        units
+        ":558,"
+        nano
+        ":100000000},"
+        quantity
+        ":7869},{"
+        price
+        ":{"
+        units
+        ":558,"
+        nano
+        ":0},"
+        quantity
+        ":6408},{"
+        price
+        ":{"
+        units
+        ":557,"
+        nano
+        ":900000000},"
+        quantity
+        ":400},{"
+        price
+        ":{"
+        units
+        ":557,"
+        nan
+        o
+        ":800000000},"
+        quantity
+        ":1816},{"
+        price
+        ":{"
+        units
+        ":557,"
+        nano
+        ":700000000},"
+        quantity
+        ":533},{"
+        price
+        ":{"
+        units
+        ":557,"
+        nano
+        ":600000000},"
+        quantity
+        ":1528},{"
+        price
+        ":{"
+        units
+        ":557,"
+        nano
+        ":500000000},"
+        quantity
+        ":5053},{"
+        price
+        ":{"
+        units
+        ":557,"
+        nano
+        ": 400000000
+      },
+      "quantity": 699
+    },
+    {
+      "price": {
+        "units": 557,
+        "nano": 300000000
+      },
+      "quantity": 4215
+    },
+    {
+      "price": {
+        "units": 557,
+        "nano": 200000000
+      },
+      "quantity": 1474
+    },
+    {
+      "price": {
+        "units": 557,
+        "nano": 100000000
+      },
+      "quantity": 2113
+    },
+    {
+      "price": {
+        "units": 557,
+        "nano": 0
+      },
+      "quantity": 11119
+    },
+    {
+      "price": {
+        "units": 556,
+        "nano": 800000000
+      },
+      "quantity": 520
+    },
+    {
+      "price": {
+        "units": 556,
+        "nano": 700000000
+      },
+      "quantity": 814
+    },
+    {
+      "price": {
+        "units": 556,
+        "nano": 600000000
+      },
+      "quantity": 1002
+    },
+    {
+      "price": {
+        "units": 556,
+        "nano": 500000000
+      },
+      "quantity": 455
+    },
+    {
+      "price": {
+        "units": 556,
+        "nano": 400000000
+      },
+      "quantity": 154
+    },
+    {
+      "price": {
+        "units": 556,
+        "nano": 300000000
+      },
+      "quantity": 1017
+    },
+    {
+      "price": {
+        "units": 556,
+        "nano": 200000000
+      },
+      "quantity": 134
+    },
+    {
+      "price": {
+        "units": 556,
+        "nano": 100000000
+      },
+      "qua
+      ntity
+      ":142},{"
+      price
+      ":{"
+      units
+      ":556,"
+      nano
+      ":0},"
+      quantity
+      ":9707},{"
+      price
+      ":{"
+      units
+      ":555,"
+      nano
+      ":800000000},"
+      quantity
+      ":299},{"
+      price
+      ":{"
+      units
+      ":555,"
+      nano
+      ":700000000},"
+      quantity
+      ":190},{"
+      price
+      ":{"
+      units
+      ":555,"
+      nano
+      ":600000000},"
+      quantity
+      ":1101},
+    {
+      "price": {
+        "units": 555,
+        "nano": 500000000
+      },
+      "quantity": 581
+    },
+    {
+      "price": {
+        "units": 555,
+        "nano": 400000000
+      },
+      "quantity": 21
+    },
+    {
+      "price": {
+        "units": 555,
+        "nano": 300000000
+      },
+      "quantity": 45
+    },
+    {
+      "price": {
+        "units": 555,
+        "nano": 200000000
+      },
+      "quantity": 1405
+    },
+    {
+      "pri
+      ce
+      ":{"
+      units
+      ":555,"
+      nano
+      ":100000000},"
+      quantity
+      ":27},{"
+      price
+      ":{"
+      units
+      ":555,"
+      nano
+      ":0},"
+      quantity
+      ":5097},{"
+      price
+      ":{"
+      units
+      ":554,"
+      nano
+      ":800000000},"
+      quantity
+      ":234},{"
+      price
+      ":{"
+      units
+      ":554,"
+      nano
+      ":700000000},"
+      quantity
+      ":26},{"
+      price
+      ":{"
+      units
+      ":5
+      54,
+      "nano": 600000000
+    },
+    "quantity"
+    :
+    60
+    },
+    {
+      "price": {
+        "units": 554,
+        "nano": 500000000
+      },
+      "quantity": 84
+    },
+    {
+      "price": {
+        "units": 554,
+        "nano": 400000000
+      },
+      "quantity": 300
+    },
+    {
+      "price": {
+        "units": 554,
+        "nano": 300000000
+      },
+      "quantity": 42
+    },
+    {
+      "price": {
+        "units": 554,
+        "nano
+        ":100000000},"
+        quantity
+        ":21},{"
+        price
+        ":{"
+        units
+        ":554,"
+        nano
+        ":0},"
+        quantity
+        ":940}],"
+        asks
+        ":[{"
+        price
+        ":{"
+        units
+        ":559,"
+        nano
+        ":400000000},"
+        quantity
+        ":1078},{"
+        price
+        ":{"
+        units
+        ":559,"
+        nano
+        ":600000000},"
+        quantity
+        ":1205},{"
+        price
+        ":{"
+        units
+        ":559,"
+        nano
+        ":7
+        00000000
+      },
+      "quantity": 380
+    },
+    {
+      "price": {
+        "units": 559,
+        "nano": 800000000
+      },
+      "quantity": 150
+    },
+    {
+      "price": {
+        "units": 559,
+        "nano": 900000000
+      },
+      "quantity": 605
+    },
+    {
+      "price": {
+        "units": 560,
+        "nano": 0
+      },
+      "quantity": 7297
+    },
+    {
+      "price": {
+        "units": 560,
+        "nano": 100000000
+      },
+      "q
+      uantity
+      ":10},{"
+      price
+      ":{"
+      units
+      ":560,"
+      nano
+      ":200000000},"
+      quantity
+      ":37},{"
+      price
+      ":{"
+      units
+      ":560,"
+      nano
+      ":300000000},"
+      quantity
+      ":278},{"
+      price
+      ":{"
+      units
+      ":560,"
+      nano
+      ":400000000},"
+      quantity
+      ":29},{"
+      price
+      ":{"
+      units
+      ":560,"
+      nano
+      ":500000000},"
+      quantity
+      ": 208
+    },
+    {
+      "price": {
+        "units": 560,
+        "nano": 600000000
+      },
+      "quantity": 143
+    },
+    {
+      "price": {
+        "units": 560,
+        "nano": 700000000
+      },
+      "quantity": 430
+    },
+    {
+      "price": {
+        "units": 560,
+        "nano": 800000000
+      },
+      "quantity": 10
+    },
+    {
+      "price": {
+        "units": 560,
+        "nano": 900000000
+      },
+      "quantity": 810
+    },
+    {
+      "price": {
+        "units": 561,
+        "nano": 0
+      },
+      "quantity": 5143
+    },
+    {
+      "price": {
+        "units": 561,
+        "nano": 200000000
+      },
+      "quantity": 1000
+    },
+    {
+      "price": {
+        "units": 561,
+        "nano": 300000000
+      },
+      "quantity": 1000
+    },
+    {
+      "price": {
+        "units": 561,
+        "nano": 500000000
+      },
+      "quantity": 4303
+    },
+    {
+      "price": {
+        "units": 561,
+        "nano": 600000000
+      },
+      "quantity": 1000
+    },
+    {
+      "price": {
+        "units": 561,
+        "nano": 800000000
+      },
+      "quantity": 1297
+    },
+    {
+      "price": {
+        "units": 561,
+        "nano": 900000000
+      },
+      "quantity": 60
+    },
+    {
+      "price": {
+        "units": 562,
+        "nano": 0
+      },
+      "quantity": 1182
+    },
+    {
+      "price": {
+        "units": 56
+        2,
+        "nano": 100000000
+      },
+      "quantity": 839
+    },
+    {
+      "price": {
+        "units": 562,
+        "nano": 200000000
+      },
+      "quantity": 4569
+    },
+    {
+      "price": {
+        "units": 562,
+        "nano": 300000000
+      },
+      "quantity": 841
+    },
+    {
+      "price": {
+        "units": 562,
+        "nano": 400000000
+      },
+      "quantity": 530
+    },
+    {
+      "price": {
+        "units": 562,
+        "n
+        ano
+        ":500000000},"
+        quantity
+        ":1196},{"
+        price
+        ":{"
+        units
+        ":562,"
+        nano
+        ":600000000},"
+        quantity
+        ":652},{"
+        price
+        ":{"
+        units
+        ":562,"
+        nano
+        ":700000000},"
+        quantity
+        ":309},{"
+        price
+        ":{"
+        units
+        ":562,"
+        nano
+        ":800000000},"
+        quantity
+        ":1379},{"
+        price
+        ":{"
+        units
+        ":562,"
+        nano
+        ":900000000},"
+        quantity
+        ":719},{"
+        price
+        ":{"
+        units
+        ":563,"
+        nano
+        ":0},"
+        quantity
+        ":7966},{"
+        price
+        ":{"
+        units
+        ":563,"
+        nano
+        ":100000000},"
+        quantity
+        ":596},{"
+        price
+        ":{"
+        units
+        ":563,"
+        nano
+        ":200000000},"
+        quantity
+        ":426},{"
+        price
+        ":{"
+        units
+        ":563,"
+        nano
+        ":300000000},
+        "quantity": 182
+      },
+    {
+      "price": {
+        "units": 563,
+        "nano": 400000000
+      },
+      "quantity": 117
+    },
+    {
+      "price": {
+        "units": 563,
+        "nano": 500000000
+      },
+      "quantity": 438
+    },
+    {
+      "price": {
+        "units": 563,
+        "nano": 700000000
+      },
+      "quantity": 105
+    },
+    {
+      "price": {
+        "units": 563,
+        "nano": 800000000
+      },
+      "qua
+      ntity
+      ":1034},{"
+      price
+      ":{"
+      units
+      ":563,"
+      nano
+      ":900000000},"
+      quantity
+      ":1120},{"
+      price
+      ":{"
+      units
+      ":564,"
+      nano
+      ":0},"
+      quantity
+      ":2351},{"
+      price
+      ":{"
+      units
+      ":564,"
+      nano
+      ":100000000},"
+      quantity
+      ":254},{"
+      price
+      ":{"
+      units
+      ":564,"
+      nano
+      ":200000000},"
+      quantity
+      ":5},
+    {
+      "price": {
+        "units": 564,
+        "nano": 300000000
+      },
+      "quantity": 523
+    },
+    {
+      "price": {
+        "units": 564,
+        "nano": 400000000
+      },
+      "quantity": 708
+    },
+    {
+      "price": {
+        "units": 564,
+        "nano": 500000000
+      },
+      "quantity": 2144
+    },
+    {
+      "price": {
+        "units": 564,
+        "nano": 600000000
+      },
+      "quantity": 2128
+    },
+    {
+      "p
+      rice
+      ":{"
+      units
+      ":564,"
+      nano
+      ":700000000},"
+      quantity
+      ":191},{"
+      price
+      ":{"
+      units
+      ":564,"
+      nano
+      ":800000000},"
+      quantity
+      ":1197}],"
+      time
+      ":"
+      2023-03-23T08: 27
+      :
+      37.714Z
+      ","
+      limitUp
+      ":{"
+      units
+      ":619,"
+      nano
+      ":900000000},"
+      limitDown
+      ":{"
+      units
+      ":479,"
+      nano
+      ":800000000}}
+    {
+      "figi": "BBG004RVFFC0",
+      "depth": 50,
+      "isConsistent": true,
+      "bids": [
+        {
+          "price": {
+            "units": 347,
+            "nano": 600000000
+          },
+          "quantity": 897
+        },
+        {
+          "price": {
+            "units": 347,
+            "nano": 500000000
+          },
+          "quantity": 1395
+        },
+        {
+          "price": {
+            "units": 347,
+            "nano": 400000000
+          },
+          "quantity": 281
+          4
+        },
+        {
+          "price": {
+            "units": 347,
+            "nano": 300000000
+          },
+          "quantity": 1968
+        },
+        {
+          "price": {
+            "units": 347,
+            "nano": 200000000
+          },
+          "quantity": 6019
+        },
+        {
+          "price": {
+            "units": 347,
+            "nano": 100000000
+          },
+          "quantity": 4159
+        },
+        {
+          "price": {
+            "units": 347,
+            "nano": 0
+          },
+          "quantity": 6138
+        },
+        {
+          "pric
+          e
+          ":{"
+          units
+          ":346,"
+          nano
+          ":900000000},"
+          quantity
+          ":2956},{"
+          price
+          ":{"
+          units
+          ":346,"
+          nano
+          ":800000000},"
+          quantity
+          ":3383},{"
+          price
+          ":{"
+          units
+          ":346,"
+          nano
+          ":700000000},"
+          quantity
+          ":2694},{"
+          price
+          ":{"
+          units
+          ":346,"
+          nano
+          ":600000000},"
+          quantity
+          ":744},{"
+          price
+          ": {
+            "units": 346,
+            "nano": 500000000
+          },
+          "quantity": 4279
+        },
+        {
+          "price": {
+            "units": 346,
+            "nano": 400000000
+          },
+          "quantity": 2343
+        },
+        {
+          "price": {
+            "units": 346,
+            "nano": 300000000
+          },
+          "quantity": 224
+        },
+        {
+          "price": {
+            "units": 346,
+            "nano": 200000000
+          },
+          "quantity": 5705
+        },
+        {
+          "price": {
+            "units": 346,
+            "nano": 100000000
+          },
+          "quantity": 2453
+        },
+        {
+          "price": {
+            "units": 346,
+            "nano": 0
+          },
+          "quantity": 4914
+        },
+        {
+          "price": {
+            "units": 345,
+            "nano": 900000000
+          },
+          "quantity": 390
+        },
+        {
+          "price": {
+            "units": 345,
+            "nano": 800000000
+          },
+          "quantity": 2677
+        },
+        {
+          "price": {
+            "units": 34
+            5,
+            "nano": 700000000
+          },
+          "quantity": 905
+        },
+        {
+          "price": {
+            "units": 345,
+            "nano": 600000000
+          },
+          "quantity": 9360
+        },
+        {
+          "price": {
+            "units": 345,
+            "nano": 500000000
+          },
+          "quantity": 1586
+        },
+        {
+          "price": {
+            "units": 345,
+            "nano": 400000000
+          },
+          "quantity": 2846
+        },
+        {
+          "price": {
+            "units": 345,
+            "nano": 300000000
+          },
+          "quantity": 358
+        },
+        {
+          "price": {
+            "units": 345,
+            "nano": 200000000
+          },
+          "quantity": 5655
+        },
+        {
+          "price": {
+            "units": 345,
+            "nano": 100000000
+          },
+          "quantity": 8918
+        },
+        {
+          "price": {
+            "units": 345,
+            "nano": 0
+          },
+          "quantity": 11268
+        },
+        {
+          "price": {
+            "units": 344,
+            "nano": 90
+            0000000
+          },
+          "quantity": 467
+        },
+        {
+          "price": {
+            "units": 344,
+            "nano": 800000000
+          },
+          "quantity": 494
+        },
+        {
+          "price": {
+            "units": 344,
+            "nano": 700000000
+          },
+          "quantity": 481
+        },
+        {
+          "price": {
+            "units": 344,
+            "nano": 600000000
+          },
+          "quantity": 2618
+        },
+        {
+          "price": {
+            "units": 344,
+            "nano": 500000
+            000
+          },
+          "quantity": 273
+        },
+        {
+          "price": {
+            "units": 344,
+            "nano": 400000000
+          },
+          "quantity": 1130
+        },
+        {
+          "price": {
+            "units": 344,
+            "nano": 300000000
+          },
+          "quantity": 4298
+        },
+        {
+          "price": {
+            "units": 344,
+            "nano": 200000000
+          },
+          "quantity": 141
+        },
+        {
+          "price": {
+            "units": 344,
+            "nano": 100000000
+          },
+          "quantity": 244
+        },
+        {
+          "price": {
+            "units": 344,
+            "nano": 0
+          },
+          "quantity": 1596
+        },
+        {
+          "price": {
+            "units": 343,
+            "nano": 900000000
+          },
+          "quantity": 248
+        },
+        {
+          "price": {
+            "units": 343,
+            "nano": 800000000
+          },
+          "quantity": 1230
+        },
+        {
+          "price": {
+            "units": 343,
+            "nano": 700000000
+          },
+          "quantity
+          ":1703},{"
+          price
+          ":{"
+          units
+          ":343,"
+          nano
+          ":600000000},"
+          quantity
+          ":183},{"
+          price
+          ":{"
+          units
+          ":343,"
+          nano
+          ":500000000},"
+          quantity
+          ":5269},{"
+          price
+          ":{"
+          units
+          ":343,"
+          nano
+          ":400000000},"
+          quantity
+          ":2932},{"
+          price
+          ":{"
+          units
+          ":343,"
+          nano
+          ":300000000},"
+          quantity
+          ":
+          679
+        },
+        {
+          "price": {
+            "units": 343,
+            "nano": 200000000
+          },
+          "quantity": 489
+        },
+        {
+          "price": {
+            "units": 343,
+            "nano": 100000000
+          },
+          "quantity": 1486
+        },
+        {
+          "price": {
+            "units": 343,
+            "nano": 0
+          },
+          "quantity": 8815
+        },
+        {
+          "price": {
+            "units": 342,
+            "nano": 900000000
+          },
+          "quantity": 38
+        },
+        {
+          "price
+          ":{"
+          units
+          ":342,"
+          nano
+          ":800000000},"
+          quantity
+          ":531},{"
+          price
+          ":{"
+          units
+          ":342,"
+          nano
+          ":700000000},"
+          quantity
+          ":46}],"
+          asks
+          ":[{"
+          price
+          ":{"
+          units
+          ":347,"
+          nano
+          ":800000000},"
+          quantity
+          ":917},{"
+          price
+          ":{"
+          units
+          ":347,"
+          nano
+          ":900000000},"
+          quantity
+          ":4702},{"
+          p
+          rice
+          ":{"
+          units
+          ":348,"
+          nano
+          ":0},"
+          quantity
+          ":3909},{"
+          price
+          ":{"
+          units
+          ":348,"
+          nano
+          ":100000000},"
+          quantity
+          ":399},{"
+          price
+          ":{"
+          units
+          ":348,"
+          nano
+          ":200000000},"
+          quantity
+          ":50},{"
+          price
+          ":{"
+          units
+          ":348,"
+          nano
+          ":300000000},"
+          quantity
+          ":184},{"
+          price
+          ":{"
+          units
+          ":348,"
+          nano
+          ":400000000},"
+          quantity
+          ":1014},{"
+          price
+          ":{"
+          units
+          ":348,"
+          nano
+          ":500000000},"
+          quantity
+          ":786},{"
+          price
+          ":{"
+          units
+          ":348,"
+          nano
+          ":600000000},"
+          quantity
+          ":2815},{"
+          price
+          ":{"
+          units
+          ":348,"
+          nano
+          ":700000000},"
+          quantity
+          ":2584},{"
+          price
+          ":{"
+          units
+          ":
+          348,
+          "nano": 800000000
+        },
+        "quantity"
+        :
+        1800
+        },
+        {
+          "price": {
+            "units": 349,
+            "nano": 0
+          },
+          "quantity": 20
+        },
+        {
+          "price": {
+            "units": 349,
+            "nano": 100000000
+          },
+          "quantity": 89
+        },
+        {
+          "price": {
+            "units": 349,
+            "nano": 200000000
+          },
+          "quantity": 801
+        },
+        {
+          "price": {
+            "units": 349,
+            "nano": 300
+            000000
+          },
+          "quantity": 1681
+        },
+        {
+          "price": {
+            "units": 349,
+            "nano": 400000000
+          },
+          "quantity": 4
+        },
+        {
+          "price": {
+            "units": 349,
+            "nano": 500000000
+          },
+          "quantity": 108
+        },
+        {
+          "price": {
+            "units": 349,
+            "nano": 600000000
+          },
+          "quantity": 378
+        },
+        {
+          "price": {
+            "units": 349,
+            "nano": 700000000
+          },
+          "quantity": 467
+        },
+        {
+          "price": {
+            "units": 349,
+            "nano": 800000000
+          },
+          "quantity": 5515
+        },
+        {
+          "price": {
+            "units": 349,
+            "nano": 900000000
+          },
+          "quantity": 4091
+        },
+        {
+          "price": {
+            "units": 350,
+            "nano": 0
+          },
+          "quantity": 1185
+        },
+        {
+          "price": {
+            "units": 350,
+            "nano": 100000000
+          },
+          "quantit
+          y
+          ":651},{"
+          price
+          ":{"
+          units
+          ":350,"
+          nano
+          ":200000000},"
+          quantity
+          ":667},{"
+          price
+          ":{"
+          units
+          ":350,"
+          nano
+          ":300000000},"
+          quantity
+          ":203},{"
+          price
+          ":{"
+          units
+          ":350,"
+          nano
+          ":400000000},"
+          quantity
+          ":826},{"
+          price
+          ":{"
+          units
+          ":350,"
+          nano
+          ":500000000},"
+          quantity
+          ":66
+        },
+        {
+          "price": {
+            "units": 350,
+            "nano": 600000000
+          },
+          "quantity": 604
+        },
+        {
+          "price": {
+            "units": 350,
+            "nano": 700000000
+          },
+          "quantity": 308
+        },
+        {
+          "price": {
+            "units": 350,
+            "nano": 800000000
+          },
+          "quantity": 714
+        },
+        {
+          "price": {
+            "units": 350,
+            "nano": 900000000
+          },
+          "quantity": 1246
+        },
+        {
+          "
+          price
+          ":{"
+          units
+          ":351,"
+          nano
+          ":0},"
+          quantity
+          ":5314},{"
+          price
+          ":{"
+          units
+          ":351,"
+          nano
+          ":100000000},"
+          quantity
+          ":980},{"
+          price
+          ":{"
+          units
+          ":351,"
+          nano
+          ":200000000},"
+          quantity
+          ":1482},{"
+          price
+          ":{"
+          units
+          ":351,"
+          nano
+          ":300000000},"
+          quantity
+          ":1804},{"
+          price
+          ":{"
+          u
+          nits
+          ":351,"
+          nano
+          ":400000000},"
+          quantity
+          ":5076},{"
+          price
+          ":{"
+          units
+          ":351,"
+          nano
+          ":500000000},"
+          quantity
+          ":10886},{"
+          price
+          ":{"
+          units
+          ":351,"
+          nano
+          ":600000000},"
+          quantity
+          ":179},{"
+          price
+          ":{"
+          units
+          ":351,"
+          nano
+          ":700000000},"
+          quantity
+          ":242},{"
+          price
+          ":{"
+          uni
+          ts
+          ":351,"
+          nano
+          ":800000000},"
+          quantity
+          ":5225},{"
+          price
+          ":{"
+          units
+          ":351,"
+          nano
+          ":900000000},"
+          quantity
+          ":960},{"
+          price
+          ":{"
+          units
+          ":352,"
+          nano
+          ":0},"
+          quantity
+          ":4115},{"
+          price
+          ":{"
+          units
+          ":352,"
+          nano
+          ":100000000},"
+          quantity
+          ":3},{"
+          price
+          ":{"
+          units
+          ":352,"
+          nano
+          ":200000000},"
+          quantity
+          ":78},{"
+          price
+          ":{"
+          units
+          ":352,"
+          nano
+          ":300000000},"
+          quantity
+          ":8},{"
+          price
+          ":{"
+          units
+          ":352,"
+          nano
+          ":400000000},"
+          quantity
+          ":539},{"
+          price
+          ":{"
+          units
+          ":352,"
+          nano
+          ":500000000},"
+          quantity
+          ":211},{"
+          price
+          ":{"
+          units
+          ":352,"
+          nano
+          ":600000
+          000
+        },
+        "quantity"
+        :
+        620
+        },
+        {
+          "price": {
+            "units": 352,
+            "nano": 700000000
+          },
+          "quantity": 1204
+        },
+        {
+          "price": {
+            "units": 352,
+            "nano": 800000000
+          },
+          "quantity": 259
+        }
+      ],
+      "time": "2023-03-23T08:27:37.860Z",
+      "limitUp": {
+        "units": 385,
+        "nano": 600000000
+      },
+      "limitDown": {
+        "units
+        ":314,"
+        nano
+        ":0}}
