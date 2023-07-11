@@ -9,6 +9,7 @@
 !/pnpm-workspace.yaml
 # Allow shared
 !/shared
+!/packages/backend/apps
 !/packages/backend/migrations
 !/packages/backend/.eslintrc.json
 !/packages/backend/.eslintrc.yml
@@ -20,4 +21,3 @@
 !/packages/backend/tsconfig.build.json
 !/packages/backend/tsconfig.json
 !/packages/backend/webpack.config.js
-!/packages/backend/yarn.lock
