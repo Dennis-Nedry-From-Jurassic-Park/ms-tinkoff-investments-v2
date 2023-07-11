@@ -1,8 +1,9 @@
-[submodule "shared/ms-base"]
-	path = shared/ms-base
-	ignore = all
-	url = https://github.com/Dennis-Nedry-From-Jurassic-Park/ms-base.git
 [submodule "shared/ms-auth"]
 	path = shared/ms-auth
-	ignore = all
 	url = https://github.com/Dennis-Nedry-From-Jurassic-Park/ms-auth.git
+[submodule "shared/ms-base"]
+	path = shared/ms-base
+	url = https://github.com/Dennis-Nedry-From-Jurassic-Park/ms-base.git
+[submodule "shared/lib-msg-queue"]
+	path = shared/lib-msg-queue
+	url = https://github.com/Dennis-Nedry-From-Jurassic-Park/lib-msg-queue.git
