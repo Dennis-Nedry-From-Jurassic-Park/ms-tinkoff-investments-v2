@@ -55,6 +55,7 @@ cmake-build-*/
 
 # IntelliJ
 out/
+/out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
@@ -261,6 +262,8 @@ dist
 
 /logs_prev/
 /output/
+/zip/
+/zip_csv/
 /temp/output.zip
 /output_350c_spbe_figies_zip/
 /output_350c_spbe_zip/
@@ -271,9 +274,9 @@ dist
 /wsl$/
 
 !packages/backend/apps/api/src/assets
-!tsconfig.app.json
-!bup/tsconfig.json
-!bup/tsconfig.build.json
 
-/shared/ms-auth
-/shared/ms-base
+*.json
+!tsconfig.app.json
+!tsconfig.json
+!tsconfig.build.json
+!package.json
