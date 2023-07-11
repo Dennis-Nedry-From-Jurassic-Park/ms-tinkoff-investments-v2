@@ -2,6 +2,8 @@
 *
 # Allow files and directories
 !/package.json
+# Allow build tool
+!/lage.config.js
 # Allow pnpm
 !/pnpm-lock.yaml
 !/pnpm-workspace.yaml
