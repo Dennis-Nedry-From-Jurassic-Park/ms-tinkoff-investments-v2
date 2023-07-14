@@ -1,6 +1,3 @@
-[submodule "shared/ms-auth"]
-	path = shared/ms-auth
-	url = https://github.com/Dennis-Nedry-From-Jurassic-Park/ms-auth.git
 [submodule "shared/ms-base"]
 	path = shared/ms-base
 	url = https://github.com/Dennis-Nedry-From-Jurassic-Park/ms-base.git
