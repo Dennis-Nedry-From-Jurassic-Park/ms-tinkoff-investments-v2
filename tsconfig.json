@@ -43,9 +43,7 @@
     "sourceMap": true,                              /* Generates corresponding '.map' file. */
     "target": "esnext",                             /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'. */
     "types": [
-      "node"
-    ],
-    "typeRoots": [
+      "node", "jest"
     ],
     "plugins": [
       {
@@ -59,11 +57,7 @@
     "pretty": true
   },
   "exclude": [
-    ".yarn",
-    ".cache.ti.api.gs.ru.shares.report",
     "node_modules",
-    "arch-diagramms",
-    "dist",
     "test",
     "build",
     "output",
@@ -71,13 +65,16 @@
     "benchmark",
     "typings",
     "**/tests/*.test.ts",
-    "*.test.ts"
+    "*.test.ts",
+    "packages/backend/apps/atr-ti-preparations"
   ],
   "include": ["packages", "shared"],
-  "paths": {
-    "*": [
-      "*",
-      "node_modules/*"
-    ],
-  }
+  "references": [
+    {
+      "path": "shared/lib-msg-queue"
+    },
+    {
+      "path": "shared/ms-base"
+    }
+  ]
 }

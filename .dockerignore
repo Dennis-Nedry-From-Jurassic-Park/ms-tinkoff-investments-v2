@@ -9,7 +9,17 @@
 !/pnpm-lock.yaml
 !/pnpm-workspace.yaml
 # Allow shared
-!/shared
+!/shared/lib-msg-queue/src
+!/shared/lib-msg-queue/dist
+!/shared/ms-base/src
+!/shared/ms-base/dist
+!/shared/lib-msg-queue/package.json
+!/shared/ms-base/package.json
+!/shared/lib-msg-queue/tsconfig.json
+!/shared/ms-base/tsconfig.json
+!/shared/lib-msg-queue/tsconfig.build.json
+!/shared/ms-base/tsconfig.build.json
+
 !/packages/backend/tsconfig.app.json
 !/packages/backend/apps
 !/packages/backend/migrations
