@@ -19,6 +19,8 @@
 !/shared/ms-base/tsconfig.json
 !/shared/lib-msg-queue/tsconfig.build.json
 !/shared/ms-base/tsconfig.build.json
+!/shared/tsconfig.json
+!/shared/package.json
 
 !/packages/backend/tsconfig.app.json
 !/packages/backend/apps
