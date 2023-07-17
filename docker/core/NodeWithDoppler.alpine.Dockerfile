@@ -8,4 +8,4 @@ RUN wget -q -t3 'https://packages.doppler.com/public/cli/rsa.8004D9FF50437357.ke
 RUN echo 'https://packages.doppler.com/public/cli/alpine/any-version/main' | tee -a /etc/apk/repositories
 RUN apk add doppler
 
-RUN npm install -g pnpm@7.26.3
+RUN corepack enable && corepack prepare pnpm@8.6.7 --activate
