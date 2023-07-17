@@ -2,8 +2,17 @@ ARG CORE_TAG
 
 FROM core-js:$CORE_TAG as deps
 
-COPY package.json pnpm-*.yaml /atr/
-COPY packages/backend/package.json /atr/packages/backend/package.json
+WORKDIR /atr/
+
+ENV GENERATE_SOURCEMAP=false
+
+COPY package.json tsconfig.json lage.config.js pnpm-*.yaml ./
+COPY packages/backend/package.json ./packages/backend/package.json
+COPY shared/lib-msg-queue/package.json ./shared/lib-msg-queue/package.json
+COPY shared/lib-msg-queue/tsconfig.json ./shared/lib-msg-queue/tsconfig.json
+COPY shared/ms-base/package.json ./shared/ms-base/package.json
+COPY shared/ms-base/tsconfig.json ./shared/ms-base/tsconfig.json
 
 RUN set -ex; \
-    pnpm -r install --frozen-lockfile --recursive --prod;
+    pnpm -r install --frozen-lockfile --recursive; \
+# NODE_OPTIONS="--max-old-space-size=4096"
