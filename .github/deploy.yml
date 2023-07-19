@@ -1,0 +1,58 @@
+name: Deploy myapp as a container
+
+jobs:
+  deploy-myapp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 7.9.5
+
+      - name: Set pnpm store path
+        run: echo "PNPM_STORE_PATH=$(pnpm store path)" >> $GITHUB_ENV
+
+      - name: Cache pnpm modules
+        uses: actions/cache@v2
+        with:
+          path: ${{ env.PNPM_STORE_PATH }}
+          key: pnpm-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            pnpm-${{ runner.os }}-
+      - name: Cache turborepo
+        uses: actions/cache@v2
+        with:
+          path: node_modules/.cache/turbo/
+          key: turbo-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            turbo-${{ runner.os }}-
+      - name: Install node modules only for the root package and myapp
+        run: pnpm install --filter root --filter myapp
+        # Turborepo is installed to the workspace root which is why
+        # we need to install root deps as well
+
+      - name: Build myapp only with Turborepo
+        run: ./node_modules/.bin/turbo run build --filter myapp
+
+      - name: Run pnpm deploy
+        run: pnpm deploy --filter myapp pnpm-deploy-output
+
+      - name: Authenticate to the Container Registry
+        run: XXX
+
+      - name: Build the container and push it to Container Registry
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: packages/myapp/Dockerfile
+          push: true
+          tags: XXX
+
+      - name: Deploy the container
+        run: XXX
