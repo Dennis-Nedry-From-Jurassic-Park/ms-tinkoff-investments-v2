@@ -4,3 +4,6 @@
 [submodule "shared/lib-msg-queue"]
 	path = shared/lib-msg-queue
 	url = https://github.com/Dennis-Nedry-From-Jurassic-Park/lib-msg-queue.git
+[submodule "shared/lib-db-client"]
+	path = shared/lib-db-client
+	url = https://github.com/Dennis-Nedry-From-Jurassic-Park/lib-db-client.git
