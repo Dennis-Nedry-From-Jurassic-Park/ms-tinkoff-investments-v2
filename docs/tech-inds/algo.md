@@ -9,7 +9,7 @@ https://dotnet.stockindicators.dev/indicators/Stc/#content
 https://dotnet.stockindicators.dev/
 https://dotnet.stockindicators.dev/indicators/
 https://dotnet.stockindicators.dev/indicators/Aroon/#content
-
+https://github.com/debut-js/Strategies
 https://github.com/DaveSkender/Stock.Indicators/tree/main/src/s-z
 
 https://school.stockcharts.com/doku.php?id=technical_indicators:aroon_oscillator

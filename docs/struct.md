@@ -17,5 +17,6 @@ docker run -it --net=atr --rm --link clickhouse_host:clickhouse-server clickhous
 docker network create -d bridge atr
 
 docker run -d --net=atr --name clickhouse_host --expose 8123 --restart unless-stopped --ulimit nofile=262144:262144 -p 8123:8123 -v /data/clickhouse/etc/config.xml:/etc/clickhouse-server/config.xml -v /data/clickhouse/log:/var/log/clickhouse-server -v /data/clickhouse/data:/var/lib/clickhouse clickhouse/clickhouse-server:23.1.3.5-alpine
+docker run -d --name clickhouse_host --expose 8123 --restart unless-stopped --ulimit nofile=262144:262144 -p 8123:8123 -v \\wsl$\Ubuntu\clickhouse_data\log:/var/log/clickhouse-server -v \\wsl$\Ubuntu\clickhouse_data\data:/var/lib/clickhouse clickhouse/clickhouse-server:23.1.3.5-alpine
 
 docker system prune -af 
