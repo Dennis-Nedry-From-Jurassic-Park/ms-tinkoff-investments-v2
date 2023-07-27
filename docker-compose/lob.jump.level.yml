@@ -17,7 +17,7 @@ services:
       - '8080:8080'
     environment:
       # https://docs.doppler.com/docs/docker-compose
-      - DOPPLER_TOKEN=dp.st.dev.8UlqFNO7a10NIs4hlsjtG4bgWXjYzFVVpQVFPKQmdis
+      - DOPPLER_TOKEN=
       - TOKEN
   clickhouse:
     container_name: clickhouse
