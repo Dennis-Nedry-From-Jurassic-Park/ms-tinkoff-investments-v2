@@ -14,10 +14,10 @@ services:
 #        IMAGES_TAG: $IMAGES_TAG
 #        BUILDER_TAG: 0.0.1
     ports:
-      - '9200:9200'
+      - '8080:8080'
     environment:
       # https://docs.doppler.com/docs/docker-compose
-      - DOPPLER_TOKEN
+      - DOPPLER_TOKEN=dp.st.dev.8UlqFNO7a10NIs4hlsjtG4bgWXjYzFVVpQVFPKQmdis
       - TOKEN
   clickhouse:
     container_name: clickhouse

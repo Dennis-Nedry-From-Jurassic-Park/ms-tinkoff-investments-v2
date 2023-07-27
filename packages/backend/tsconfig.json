@@ -1,19 +1,36 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "declaration": true,
-    "outDir": "dist/apps/api"
+    "outDir": "../../dist/packages/backend/apps",
+    "types": [
+      "node",
+      "jest"
+    ]
   },
-  "lib": [
-    "es2016",
-    "dom"
-  ],
-  "include": [
-    "apps/api/src"
-  ],
   "paths": {
-    "*": [ "../../../node_modules/*"]
+    "~/*": ["./apps/*"],
   },
+  "include": [
+    "apps"
+  ],
   "exclude": [
-    "apps/api/node_modules", "node_modules", "dist", "test", "logs", "**/*spec.ts"]
+    "apps/atr-ti-preparations",
+    "apps/node_modules",
+    "node_modules",
+    "dist",
+    "test",
+    "logs",
+    "**/*spec.ts",
+    "*/dist/*",
+    "**/dist/**",
+    "dist/**/*"
+  ]
+//  "references": [
+//    {
+//      "path": "../../shared"
+//    },
+//    {
+//      "path": "../../shared/lib-base/tsconfig.json"
+//    }
+//  ]
 }

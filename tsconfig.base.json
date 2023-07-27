@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "esnext", // error TS2802:
+    "module": "CommonJS",
+    "declaration": false, // to generate .d.ts files and add them to the build
+    "declarationMap": false, // to allow the resultant .d.ts files to be found by the IDE (using things such as “Go to Reference”)
+
+    "sourceMap": true, // to allow debuggers to find the javascript being currently run
+
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false, // error TS7006: Parameter '*' implicitly has an 'any' type
+    "noUnusedLocals": false, // error TS6133: * is declared but its value is never read
+    "noUnusedParameters": false
+  }
+}

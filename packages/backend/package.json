@@ -4,20 +4,38 @@
   "license": "Apache-2.0",
   "private": true,
   "scripts": {
+    "pnpm:add:package": "npx pnpm add -w @clickhouse/client",
+    "pnpm:install": "npx pnpm -r install --recursive",
+    "build": "tsc -b ."
   },
   "dependencies": {
-    "@yarnpkg/pnpify": "^4.0.0-rc.38",
+    "async": "^3.2.4",
     "bignumber.js": "^9.1.1",
-    "bybit-api": "^3.3.10",
-    "date-fns": "^2.29.3",
-    "ms-auth": "workspace:^",
-    "ms-base": "workspace:^",
-    "tinkoff-invest-api": "^5.0.0",
-    "tslib": "^2.5.0",
-    "uuid": "^9.0.0"
+    "bybit-api": "^3.7.1",
+    "date-fns": "^2.30.0",
+    "lib-msg-queue": "workspace:^",
+    "lodash": "^4.17.21",
+    "math": "^0.0.3",
+    "moex-api": "^1.1.1",
+    "nodejs-threads": "^1.1.0",
+    "paralleljs": "^1.1.0",
+    "redis": "^4.6.7",
+    "run-parallel": "^1.2.0",
+    "safe-stable-stringify": "^2.4.3",
+    "threadman": "^0.8.4",
+    "threads": "^1.7.0",
+    "threadsjs": "^0.2.0",
+    "tslib": "^2.6.0",
+    "uuid": "^9.0.0",
+    "workerpool": "^6.4.0",
+    "worktank": "^2.3.1"
   },
   "devDependencies": {
-    "@jest/types": "^29.3.1",
-    "@types/node": "^18.11.18"
-  }
+    "@jest/types": "29.6.1",
+    "@types/jest": "29.5.3",
+    "@types/node": "^20.4.2",
+    "@types/uuid": "^9.0.2",
+    "jest": "29.6.1"
+  },
+  "packageManager": "pnpm@8.6.7"
 }

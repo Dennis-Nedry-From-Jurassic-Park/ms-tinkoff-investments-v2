@@ -30,8 +30,8 @@
 !/shared/lib-msg-queue/tsconfig.build.json
 !/shared/lib-base/tsconfig.build.json
 
-!/shared/tsconfig.json
-!/shared/package.json
+#!/shared/tsconfig.json
+#!/shared/package.json
 
 !/packages/backend/tsconfig.app.json
 !/packages/backend/apps
