@@ -11,14 +11,24 @@
 # Allow shared
 !/shared/lib-msg-queue/src
 !/shared/lib-msg-queue/dist
-!/shared/ms-base/src
-!/shared/ms-base/dist
+
+!/shared/lib-base/src
+!/shared/lib-base/dist
+
+!/shared/lib-db-client/src
+!/shared/lib-db-client/dist
+
+!/shared/lib-db-client/package.json
 !/shared/lib-msg-queue/package.json
-!/shared/ms-base/package.json
+!/shared/lib-base/package.json
+
 !/shared/lib-msg-queue/tsconfig.json
-!/shared/ms-base/tsconfig.json
+!/shared/lib-db-client/tsconfig.json
+
+!/shared/lib-base/tsconfig.json
 !/shared/lib-msg-queue/tsconfig.build.json
-!/shared/ms-base/tsconfig.build.json
+!/shared/lib-base/tsconfig.build.json
+
 !/shared/tsconfig.json
 !/shared/package.json
 
