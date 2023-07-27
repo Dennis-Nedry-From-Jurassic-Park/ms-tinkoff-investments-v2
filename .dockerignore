@@ -3,6 +3,7 @@
 # Allow files and directories
 !/package.json
 !/tsconfig.json
+!/tsconfig.base.json
 # Allow build tool
 !/lage.config.js
 # Allow pnpm
