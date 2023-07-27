@@ -21,29 +21,4 @@
     "packages/backend/apps/atr-ti-preparations"
     //"node_modules"
   ]
- // "files": [],
-  // to ignore all files except those in the references
-//  "references": [
-//    // The path in references needs to resolve to a tsconfig.json
-//    {
-//      "path": "shared/lib-base/tsconfig.json"
-//    },
-//    {
-//      "path": "shared/lib-db-client/tsconfig.json"
-//    },
-//    {
-//      "path": "shared/lib-msg-queue"
-//    },
-//    {
-//      "path": "packages"
-//    }
-//  ]
-//  "paths": {
-//    "@lib/base/*": [
-//      "shared/dist/lib-db-client/src/**"
-//    ],
-//    "lib-db-client/*": [
-//      "shared/lib-db-client/src/**"
-//    ]
-//  }
 }
