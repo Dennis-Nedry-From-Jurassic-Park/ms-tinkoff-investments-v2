@@ -17,7 +17,7 @@ https://stackoverflow.com/questions/58216537/what-is-administered-port-exclusion
 netsh interface ipv4 show excludedportrange protocol=tcp
 
 0) Dism /Online /Cleanup-Image /RestoreHealth
-1) close all processes of docker (programm & service)
+1) close all processes of docker (programm & service) For Example: WebStorm
 2) netstat -ano | findstr 8123
 TCP    127.0.0.1:8123         127.0.0.1:10122        ESTABLISHED     17052                                              
 TCP    127.0.0.1:10122        127.0.0.1:8123         ESTABLISHED     17052
