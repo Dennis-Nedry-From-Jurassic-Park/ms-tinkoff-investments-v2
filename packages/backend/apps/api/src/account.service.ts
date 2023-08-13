@@ -10,6 +10,7 @@ export const getAccounts = async (): Promise<any> => {
 export const AccountId = {
     iis: process.env.BROKER_ACCOUNT_ID_IIS + '',
     brokerage: process.env.BROKER_ACCOUNT_ID_BROKERAGE + '',
+    atr: process.env.BROKER_ACCOUNT_ID_ATR + '',
 };
 
 export const Account = {
