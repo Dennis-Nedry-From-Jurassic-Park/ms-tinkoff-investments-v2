@@ -8,18 +8,18 @@ export const toBigNum = (value: Quotation | MoneyValue | undefined): BigNumber |
 
 const nanoPrecision = 1_000_000_000;
 
-export const toNum
+export const toNum_
     = (qutation: { units: number, nano: number }) => Number(qutation.units + (qutation.nano / nanoPrecision));
 
-export const toQuotation = (number: number) => ({
+export const toQuotation_ = (number: number) => ({
     units: Math.floor(number),
     nano: Math.trunc(number),
 });
 
-export const toNum_ = (value: Quotation | MoneyValue | undefined): number | undefined => {
+export const toNum = (value: Quotation | MoneyValue | undefined): number | undefined => {
     return api.helpers.toNumber(value) ;
 }
-export const toQuotation_ = (value: number): Quotation => {
+export const toQuotation = (value: number): Quotation => {
     return api.helpers.toQuotation(value) ;
 }
 
