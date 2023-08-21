@@ -280,3 +280,6 @@ dist
 !tsconfig.json
 !tsconfig.build.json
 !package.json
+
+# heapsnapshot
+*.heapsnapshot
