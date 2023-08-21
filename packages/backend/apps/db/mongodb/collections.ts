@@ -1,6 +1,8 @@
 const temp = '' // _zstd
 
 export const Collection = {
+    imoex_stream_errors: 'imoex.stream.errors' + temp,
+    imoex_marketdata_candles: 'imoex.marketdata.candles' + temp,
     imoex_orderbook: 'imoex.orderbook' + temp,
     imoex_trades: 'imoex.trades' + temp,
     imoex_last_price: 'imoex.last_price' + temp,
