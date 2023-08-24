@@ -3,5 +3,3 @@ import {TinkoffInvestApi} from "tinkoff-invest-api";
 // https://github.com/alpacahq/alpaca-ts/issues/106
 
 export const api = new TinkoffInvestApi({ token: process.env.TOKEN + '' });
-
-delete process.env.TOKEN;
