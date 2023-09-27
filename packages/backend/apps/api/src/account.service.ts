@@ -1,11 +1,5 @@
-import {api} from "./api";
 import {RealAccount, TinkoffInvestApi} from "tinkoff-invest-api";
-
-export const getAccounts = async (): Promise<any> => {
-    const accounts = await api.users.getAccounts({});
-    console.log(accounts);
-    return accounts
-}
+import {ApiService} from "./api.service";
 
 export const AccountId = {
     iis: process.env.CEX_TI_V2_BROKER_ACCOUNT_ID_IIS + '',
@@ -14,15 +8,16 @@ export const AccountId = {
     mom_iis: process.env.CEX_TI_V2_MOM_IIS_ID + '',
 };
 
-export const Account = {
-    iis: new RealAccount(api, AccountId.iis),
-    atr: new RealAccount(api, AccountId.atr),
-    mom_iis: new RealAccount(api, AccountId.mom_iis),
-    brokerage: new RealAccount(api, AccountId.brokerage),
-};
+// export const Account = {
+//     iis: new RealAccount(api, AccountId.iis),
+//     atr: new RealAccount(api, AccountId.atr),
+//     mom_iis: new RealAccount(api, AccountId.mom_iis),
+//     brokerage: new RealAccount(api, AccountId.brokerage),
+// };
 
+export type Account = RealAccount
 export type AccountId = typeof AccountId[keyof typeof AccountId]
-export type Account = typeof Account[keyof typeof Account]
+//export type Account = typeof Account[keyof typeof Account]
 
 export class TokenService {
     private readonly accountId: AccountId
@@ -47,28 +42,34 @@ export class TokenService {
         }
     }
 }
-
-export class AccountService {
-    private api: TinkoffInvestApi
+// https://github.com/vitalets/tinkoff-invest-api/issues/1
+// https://github.com/alpacahq/alpaca-ts/issues/106
+export class AccountService extends ApiService {
     private readonly accountId: AccountId
 
     constructor({
                     api,
                     accountId
-    }: {
+    } : {
         api: TinkoffInvestApi,
         accountId: AccountId
     }) {
-        this.api = api
+        super({api});
         this.accountId = accountId
     }
 
-    getAccount = (): Account => {
-        return new RealAccount(this.api, this.accountId)
+    getAccount = (): RealAccount => {
+        return new RealAccount(this.get_api(), this.accountId)
     }
 
     getAccountId = (): string => {
         return this.accountId
+    }
+
+    getAccounts = async (): Promise<any> => {
+        const accounts = await this.get_api().users.getAccounts({});
+        console.log(accounts);
+        return accounts
     }
 
 
