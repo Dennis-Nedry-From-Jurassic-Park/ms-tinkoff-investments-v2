@@ -1,23 +1,29 @@
-import {api} from "./api";
 import {Share} from "tinkoff-invest-api/cjs/generated/instruments";
 import {HistoricCandle, LastPrice} from "tinkoff-invest-api/dist/generated/marketdata";
-import {CandleInterval} from "tinkoff-invest-api/cjs/generated/marketdata";
-import {GetCandlesResponse} from "tinkoff-invest-api/cjs/generated/marketdata";
-import {instrumentsService} from "./instruments.service";
+import {CandleInterval, GetCandlesResponse} from "tinkoff-invest-api/cjs/generated/marketdata";
 import {prettyJSON} from "@lib/base/src/utility-methods/stringify";
 import {Exchange} from "@lib/base/src/constants/exchange";
-import {PreparedCandle} from "./dto/candle";
 import {PreparedLastPrice} from "./dto/last.price";
 
 import sub from 'date-fns/sub'
 import add from 'date-fns/add'
 import startOfMinute from 'date-fns/startOfMinute'
 import {toNum} from "./helpers/num";
-
+import {InstrumentsService} from "./instruments.service";
+import {TinkoffInvestApi} from "tinkoff-invest-api";
 
 class MarketDataService {
-    constructor() {
+    private api: TinkoffInvestApi
+    private instrumentsService!: InstrumentsService
 
+    constructor({ api }: { api: TinkoffInvestApi }) {
+        this.api = api
+
+        this.instrumentsService = new InstrumentsService(
+            {
+                api: this.api
+            }
+        )
     }
 
     get_candles = async (
@@ -27,7 +33,7 @@ class MarketDataService {
         timeframe: CandleInterval,
         volume: number = 10000
     ) => {
-        const share = await instrumentsService.get_share_by_ticker(ticker);
+        const share = await this.instrumentsService.get_share_by_ticker(ticker);
 
         const candles_ = await this.get_historical_candles(
             ticker,
@@ -55,7 +61,6 @@ class MarketDataService {
         console.log(prettyJSON(candles));
 
         return candles
-
     }
 
     get_$_price = async (date: string): Promise<number | undefined > => {
@@ -63,7 +68,7 @@ class MarketDataService {
         const to = add(new Date(date), { seconds: 59 })
 
         const candles =
-            await api.marketdata.getCandles({
+            await this.api.marketdata.getCandles({
                 figi: 'BBG0013HGFT4',
                 from: startOfMinute(from),
                 to: startOfMinute(to),
@@ -96,9 +101,9 @@ class MarketDataService {
         timeframe: CandleInterval,
         volume: number
     ): Promise<GetCandlesResponse> => {
-        const share: Share = await instrumentsService.get_share_by_ticker(ticker);
+        const share: Share = await this.instrumentsService.get_share_by_ticker(ticker);
 
-        let candles = await api.marketdata.getCandles({
+        let candles = await this.api.marketdata.getCandles({
             figi: share.figi,
             from: from,
             to: to,
@@ -145,7 +150,7 @@ class MarketDataService {
     }
 
     getLastPrices = async (figies: string[]): Promise<LastPrice[]> => {
-        const last_price = await api.marketdata.getLastPrices({ figi: figies });
+        const last_price = await this.api.marketdata.getLastPrices({ figi: figies });
         return last_price.lastPrices
     }
 
@@ -190,10 +195,10 @@ class MarketDataService {
 }
 
 export const getPreparedLastPrices = async (tickers: string[]): Promise<PreparedLastPrice[]> => {
-    const figies: string[] = await instrumentsService.get_figies_by_tickers(tickers)
+    const figies: string[] = await this.instrumentsService.get_figies_by_tickers(tickers)
     const _lastPrices = await getLastPrices(figies)
 
-    const pairs = await instrumentsService
+    const pairs = await this.instrumentsService
         .get_pairs_ticker_figi(
             [
                 Exchange.MOEX, Exchange.MOEX_MORNING, Exchange.MOEX_WEEKEND
@@ -211,7 +216,7 @@ export const getPreparedLastPrices = async (tickers: string[]): Promise<Prepared
     return lastPrices
 }
 export const getLastPrices = async (figies: string[]): Promise<LastPrice[]> => {
-    const last_price = await api.marketdata.getLastPrices({ figi: figies });
+    const last_price = await this.api.marketdata.getLastPrices({ figi: figies });
     return last_price.lastPrices
     //const quotation = last_price.lastPrices.filter((lastPrice: LastPrice) => { return lastPrice.figi === share.figi})[0].price
 }
