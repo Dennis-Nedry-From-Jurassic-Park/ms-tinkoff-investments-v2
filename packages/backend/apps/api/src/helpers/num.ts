@@ -1,29 +1,38 @@
 import BigNumber from "bignumber.js";
 import {MoneyValue, Quotation} from "tinkoff-invest-api/cjs/generated/common";
-import {api} from "../api";
+import {TinkoffInvestApi} from "tinkoff-invest-api";
 
-export const toBigNum = (value: Quotation | MoneyValue | undefined): BigNumber | undefined => {
-    return (value ? BigNumber(value.units + value.nano / 1000000000) : value) as BigNumber extends undefined ? undefined : BigNumber
-}
+export class PriceHelper {
+    private api: TinkoffInvestApi
+    private nanoPrecision = 1_000_000_000;
 
-const nanoPrecision = 1_000_000_000;
+    constructor({ api }: { api: TinkoffInvestApi }) {
+        this.api = api
+    }
 
-export const toNum_
-    = (qutation: { units: number, nano: number }) => Number(qutation.units + (qutation.nano / nanoPrecision));
+    toBigNum = (value: Quotation | MoneyValue | undefined): BigNumber | undefined => {
+        return (value ? BigNumber(value.units + value.nano / 1000000000) : value) as BigNumber extends undefined ? undefined : BigNumber
+    }
 
-export const toQuotation_ = (number: number) => ({
-    units: Math.floor(number),
-    nano: Math.trunc(number),
-});
+    toNum_
+        = (qutation: { units: number, nano: number }) => Number(qutation.units + (qutation.nano / this.nanoPrecision));
 
-export const toNum = (value: Quotation | MoneyValue | undefined): number | undefined => {
-    return api.helpers.toNumber(value) ;
-}
-export const toQuotation = (value: number): Quotation => {
-    return api.helpers.toQuotation(value) ;
-}
+    toQuotation_ = (number: number) => ({
+        units: Math.floor(number),
+        nano: Math.trunc(number),
+    });
 
-export const roundToNearestStep = (candidate, step) => {
-    return Math.round(candidate / step) * step;
-};
+    toNum = (value: Quotation | MoneyValue | undefined): number | undefined => {
+        return this.api.helpers.toNumber(value) ;
+    }
+    toQuotation = (value: number): Quotation => {
+        return this.api.helpers.toQuotation(value) ;
+    }
+
+    roundToNearestStep = (candidate, step) => {
+        return Math.round(candidate / step) * step;
+    };
 // https://www.npmjs.com/package/worker-farm
+}
+
+
