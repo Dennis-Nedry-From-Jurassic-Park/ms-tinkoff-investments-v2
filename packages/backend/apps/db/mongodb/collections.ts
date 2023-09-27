@@ -1,12 +1,19 @@
 const temp = '' // _zstd
 
 export const Collection = {
-    imoex_stream_errors: 'imoex.stream.errors' + temp,
+    imoex_deals: 'imoex.deals' + temp,
+    imoex_logs: 'imoex.logs' + temp,
+    imoex_errors: 'imoex.errors' + temp,
+    imoex_marketdata_historical_candles: 'imoex.marketdata.historical.candles' + temp,
+    imoex_marketdata_historical_candles2: 'imoex.marketdata.historical.candles2' + temp,
+    imoex_marketdata_historical_candles5: 'imoex.marketdata.historical.candles5' + temp,
+    imoex_marketdata_backtest: 'imoex.marketdata.backtest' + temp,
+    imoex_marketdata_backtest1: 'imoex.marketdata.backtest2' + temp,
+
     imoex_marketdata_candles: 'imoex.marketdata.candles' + temp,
     imoex_orderbook: 'imoex.orderbook' + temp,
     imoex_trades: 'imoex.trades' + temp,
     imoex_last_price: 'imoex.last_price' + temp,
-    imoex_errors: 'imoex.errors' + temp,
     imoex_operations_portfolio: 'imoex.operations.portfolio' + temp,
     imoex_operations_positions: 'imoex.operations.positions' + temp,
     imoex_operations_getWithdrawLimits: 'imoex.operations.getWithdrawLimits' + temp,
