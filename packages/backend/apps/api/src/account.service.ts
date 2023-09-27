@@ -1,5 +1,5 @@
 import {RealAccount, TinkoffInvestApi} from "tinkoff-invest-api";
-import {ApiService} from "./api.service";
+import {Api} from "./api";
 
 export const AccountId = {
     iis: process.env.CEX_TI_V2_BROKER_ACCOUNT_ID_IIS + '',
@@ -42,9 +42,8 @@ export class TokenService {
         }
     }
 }
-// https://github.com/vitalets/tinkoff-invest-api/issues/1
-// https://github.com/alpacahq/alpaca-ts/issues/106
-export class AccountService extends ApiService {
+
+export class AccountService extends Api {
     private readonly accountId: AccountId
 
     constructor({
