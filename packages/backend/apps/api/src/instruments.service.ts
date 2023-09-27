@@ -20,10 +20,10 @@ interface Instruments {
 //type IMOEX = Exchange.MOEX | Exchange.MOEX_MORNING
 
 export class InstrumentsService {
-    private readonly status: InstrumentStatus;
-    private readonly isQualifiedInvestor: boolean;
-    private readonly otcFlag: boolean;
-    private readonly shortEnabledFlag: boolean;
+    private readonly status: InstrumentStatus | undefined;
+    private readonly isQualifiedInvestor: boolean | undefined;
+    private readonly otcFlag: boolean | undefined;
+    private readonly shortEnabledFlag: boolean | undefined;
     private shares: Share[] = [];
     private shares_imoex: Share[] = [];
     private instruments: Instruments = {instruments: []};
