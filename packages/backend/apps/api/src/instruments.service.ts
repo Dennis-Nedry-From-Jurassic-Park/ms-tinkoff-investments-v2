@@ -34,12 +34,12 @@ export class InstrumentsService {
                     api,
                     status,
                     isQualifiedInvestor,
-                    shortEnabledFlag = true,
+                    shortEnabledFlag,
                 }: {
                     api: TinkoffInvestApi,
-                    status: InstrumentStatus,
-                    isQualifiedInvestor: boolean,
-                    shortEnabledFlag: boolean,
+                    status?: InstrumentStatus.INSTRUMENT_STATUS_BASE,
+                    isQualifiedInvestor?: false,
+                    shortEnabledFlag?: true,
                 }
     ) {
         this.api = api;
