@@ -3,10 +3,10 @@ import {SecurityTradingStatus} from "tinkoff-invest-api/cjs/generated/common";
 import {addDays, format, isBefore, parseISO} from 'date-fns'
 import {shares_status_all, shares_status_base, shares_status_base_imoex} from "./assets";
 import assert from "assert";
-import {api} from "./api";
-
 import {DAY} from "@lib/base/src/constants/date.time.formats";
 import {Exchange} from "@lib/base/dist";
+import number from "extra-number";
+import {TinkoffInvestApi} from "tinkoff-invest-api";
 
 export interface Pair {
     ticker: string,
@@ -19,24 +19,38 @@ interface Instruments {
 
 //type IMOEX = Exchange.MOEX | Exchange.MOEX_MORNING
 
-class InstrumentsService {
+export class InstrumentsService {
     private readonly status: InstrumentStatus;
     private readonly isQualifiedInvestor: boolean;
     private readonly otcFlag: boolean;
+    private readonly shortEnabledFlag: boolean;
     private shares: Share[] = [];
     private shares_imoex: Share[] = [];
-    private instruments: Instruments = { instruments: [] };
+    private instruments: Instruments = {instruments: []};
     private readonly imoex_exchanges: Exchange[] = [];
+    private api: TinkoffInvestApi
 
-    constructor(
-        status: InstrumentStatus = InstrumentStatus.INSTRUMENT_STATUS_BASE,
-        isQualifiedInvestor: boolean = false
+    constructor({
+                    api,
+                    status,
+                    isQualifiedInvestor,
+                    shortEnabledFlag = true,
+                }: {
+                    api: TinkoffInvestApi,
+                    status: InstrumentStatus,
+                    isQualifiedInvestor: boolean,
+                    shortEnabledFlag: boolean,
+                }
     ) {
+        this.api = api;
         this.status = status;
         this.isQualifiedInvestor = isQualifiedInvestor;
         this.otcFlag = this.isQualifiedInvestor;
+        this.shortEnabledFlag = shortEnabledFlag;
 
-        this.imoex_exchanges = [Exchange.MOEX, Exchange.MOEX_WEEKEND, Exchange.MOEX_MORNING];
+        this.imoex_exchanges = [
+            Exchange.MOEX, Exchange.MOEX_WEEKEND, Exchange.MOEX_MORNING
+        ];
 
         // MOEX_DEALER_WEEKEND = 'MOEX_DEALER_WEEKEND',
         // MOEX_EVENING_WEEKEND = 'MOEX_EVENING_WEEKEND',
@@ -177,6 +191,7 @@ class InstrumentsService {
                 && sellAvailableFlag_
                 && apiTradeAvailableFlag_
                 && share.otcFlag === this.otcFlag
+                && share.shortEnabledFlag === this.shortEnabledFlag
                 && share.tradingStatus !== SecurityTradingStatus.SECURITY_TRADING_STATUS_NOT_AVAILABLE_FOR_TRADING
                 && filterByTickers
                 && filterByExchange
@@ -240,7 +255,40 @@ class InstrumentsService {
             return s.figi === figi
         })[0];
     }
+
+    genericFilter<T>(
+        objects: T[],
+        properties: Array<keyof T>,
+        queries: Array<string>[] | Array<number>[]
+    ): T[] {
+        return objects.filter((object) => {
+            let count = 0;
+            properties.some((props) => {
+                const objectValue = object[props]
+                if (typeof objectValue === "string" || typeof objectValue === "number") {
+                    queries.forEach((query) => {
+                        query.forEach((queryValue) => {
+                            if (queryValue === objectValue) {
+                                count += 1;
+                            }
+                        })
+                    })
+                }
+            })
+            return count === properties.length;
+        })
+    }
+
+    get_share_by_field_with_value = (
+        field: any,
+        value: string
+    ): Share[] => {
+        const arr: Array<string>[] = [[value]]
+        return this.genericFilter(this.shares, [field], arr)
+
+    }
     get_share_by_uid_sync = (uid: string): Share => {
+
         return this.shares.filter((s: Share) => {
             return s.uid === uid
         })[0];
@@ -261,7 +309,7 @@ class InstrumentsService {
     is_trading_day = async (exchange: string): Promise<boolean> => {
         const now = new Date();
 
-        const tradingDay = await api.instruments.tradingSchedules({
+        const tradingDay = await this.api.instruments.tradingSchedules({
             exchange: exchange,
             from: now,
             to: now,
@@ -307,7 +355,3 @@ class InstrumentsService {
         return await this.get_shares_by_tickers_with_filter(tickers, exchanges, buyAvailableFlag, sellAvailableFlag, apiTradeAvailableFlag);
     }
 }
-
-export const instrumentsService = new InstrumentsService();
-
-//instrumentsService.get_instrument_by_ticker('ENDP')
